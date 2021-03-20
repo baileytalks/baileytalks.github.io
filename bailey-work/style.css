@@ -6,7 +6,7 @@ html {
 
 /* --- Change default colors --- */
 :root {
-  --color-bg-default: #F9F6F0 !important;
+  --color-bg-default: #FFE19C !important;
   --color-text-default: #4B5673 !important;
   --color-text-default-light: #4B5673 !important;
   --color-text-gray: #959BA9 !important;
@@ -29,7 +29,7 @@ html {
 }
 
 body {
-  font-family: reason-new, sans-serif !important;
+  font-family: roboto-slab, sans-serif !important;
 
   /* Make the text nice and crisp */
   -webkit-font-smoothing: antialiased;
