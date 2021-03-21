@@ -6,7 +6,7 @@ html {
 
 /* --- Change default colors --- */
 :root {
-  --color-bg-default: #FFE19C !important;
+  --color-bg-default: #E6EBE0 !important;
   --color-text-default: #4B5673 !important;
   --color-text-default-light: #4B5673 !important;
   --color-text-gray: #959BA9 !important;
@@ -41,6 +41,11 @@ body {
 
 strong {
     font-weight: 500 !important;
+}
+
+.notion-link {
+  color: #ED6A5A !important;
+  font-weight: bold;
 }
 
 /* Styling for page names */
