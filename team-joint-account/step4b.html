@@ -87,11 +87,11 @@
 			var myChart = new Chart(ctx, {
 				type: "doughnut",
 				data: {
-					labels: ["Me", "Archie"],
+					labels: ["Archie", "Me"],
 					datasets: [
 						{
 							label: "Split in %",
-							data: [split1, split2],
+							data: [split2, split1],
 							backgroundColor: ["rgba(185, 182, 67, 1)", "rgba(48, 115, 81, 1)"],
 							borderColor: ["rgba(255, 99, 132, 0)", "rgba(54, 162, 235, 0)"],
 							borderWidth: 1,
@@ -103,6 +103,7 @@
 					legend: {
 						display: true,
 						position: "bottom",
+						reverse: true,
 						labels: {
 							padding: 20,
 						},

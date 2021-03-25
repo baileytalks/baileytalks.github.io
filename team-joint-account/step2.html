@@ -45,13 +45,16 @@
 
 		<main>
 			<h1 class="mb-30">Invite collaborator</h1>
-
-			<div class="form-group">
-				<div class="custom-control custom-switch">
-					<input type="checkbox" class="custom-control-input" id="customSwitch1" />
-					<label class="custom-control-label" for="customSwitch1"
-						>Does this person have a Cocoa account?</label
-					>
+ 
+			<label class="padded">Does this person have a Cocoa account?</label>
+			<div class="form-group float-right yes-no">
+				<div class="btn-group btn-group-toggle" data-toggle="buttons">
+					<label class="btn btn-primary">
+					  <input type="radio" name="options" id="option1" autocomplete="off"> Yes
+					</label>
+					<label class="btn btn-primary active">
+					  <input type="radio" name="options" id="option2" autocomplete="off" checked=""> No
+					</label>
 				</div>
 			</div>
 

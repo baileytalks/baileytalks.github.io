@@ -232,3 +232,19 @@ body.withStickyFooter {
 .expandable-content select {
 	padding-left: 3px;
 }
+.yes-no .btn {
+	padding:0.375rem;
+}
+
+.yes-no .btn.btn-primary {
+	background-color: #307351;
+	border-color: #307351;
+}
+
+.yes-no .btn.btn-primary.active {
+	background-color: #23553c;
+	border-color: #23553c;
+	text-decoration: underline;
+}
+
+label.padded {padding-top:5px;}

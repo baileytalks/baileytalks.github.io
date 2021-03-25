@@ -48,7 +48,7 @@
 
 			<div class="form-group mb-30">
 				<label class="col-form-label" for="input0">New Co-count name</label>
-				<input type="text" class="form-control" placeholder="Me and the other half" id="input0" />
+				<input type="text" class="form-control" placeholder="" id="input0" />
 			</div>
 
 			<div class="card bg-light mb-3">
@@ -92,8 +92,8 @@
 			var input1 = document.getElementById("input1");
 			var input2 = document.getElementById("input2");
 
-			var split1 = 60;
-			var split2 = 40;
+			var split1 = 50;
+			var split2 = 50;
 
 			sessionStorage.setItem("split1", split1);
 			sessionStorage.setItem("split2", split2);
@@ -118,6 +118,7 @@
 					legend: {
 						display: true,
 						position: "bottom",
+						reverse: true,
 						labels: {
 							padding: 20,
 						},
