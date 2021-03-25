@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>TechSprint app</title>
+		<meta name="description" content="The new joint account app" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	</head>
+
+	<body class="withStickyFooter">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+			<img src="images/cocoa_cropped.png" height="30px" alt="Cocoa"/>
+			
+			<img
+				src="images/anna.png" height="40px"
+				class="navbar-toggler no-border collapsed"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarColor01"
+				aria-controls="navbarColor01"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			/>
+			</button>
+
+			<div class="navbar-collapse collapse" id="navbarColor01">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#"
+							>My Cocoa
+							<span class="sr-only">(current)</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="step2.html">Co-count invites</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Settings</a>
+					</li>
+			</div>
+		</nav>
+
+		<main>
+			<h1 class="mb-30">Invite collaborator</h1>
+
+			<div class="form-group">
+				<div class="custom-control custom-switch">
+					<input type="checkbox" class="custom-control-input" id="customSwitch1" />
+					<label class="custom-control-label" for="customSwitch1"
+						>Does this person have a Cocoa account?</label
+					>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<div class="input-group mb-3">
+					<div class="input-group-prepend">
+						<span class="input-group-text">
+							<span class="material-icons">&#xe7fd;</span>
+						</span>
+					</div>
+					<input type="text" class="form-control" placeholder="Full name" id="inputDefault2" />
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="input-group mb-3">
+					<div class="input-group-prepend">
+						<span class="input-group-text">
+							<span class="material-icons">&#xe0be;</span>
+						</span>
+					</div>
+					<input type="text" class="form-control" placeholder="Email" id="inputDefault3" />
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="input-group mb-3">
+					<div class="input-group-prepend">
+						<span class="input-group-text">
+							<span class="material-icons">&#xe0cd;</span>
+						</span>
+					</div>
+					<input type="text" class="form-control" placeholder="Phone number" id="inputDefault4" />
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="input-group mb-3">
+					<div class="input-group-prepend">
+						<span class="input-group-text">
+							<span class="material-icons">&#xe7fe;</span>
+						</span>
+					</div>
+					<input
+						type="text"
+						class="form-control"
+						placeholder="Relationship to you"
+						id="inputDefault5"
+					/>
+				</div>
+			</div>
+			<div class="form-group">
+				<p>This will send the collaborator an email explaining the registering process.</p>
+				<p>
+					Once they created a Cocoa account they will need to be verified. This can take 3-5
+					business days.
+				</p>
+				<p>
+					Once their verification is successful and they've accepted your invite, you will be
+					notified.
+				</p>
+			</div>
+
+			<div class="bottom-buttons">
+				<a href="index.html" type="button" class="btn btn-danger">Cancel</a>
+				<a href="step4.html" class="btn btn-success float-right">Next: Set up &raquo;</a>
+			</div>
+		</main>
+
+		<!-- keep at the bottom -->
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

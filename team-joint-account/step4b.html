@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>TechSprint app</title>
+		<meta name="description" content="The new joint account app" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+	</head>
+
+	<body class="withStickyFooter">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+			<img src="images/cocoa_cropped.png" height="30px" alt="Cocoa"/>
+			
+			<img
+				src="images/anna.png" height="40px"
+				class="navbar-toggler no-border collapsed"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarColor01"
+				aria-controls="navbarColor01"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			/>
+			</button>
+
+			<div class="navbar-collapse collapse" id="navbarColor01">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#"
+							>My Cocoa
+							<span class="sr-only">(current)</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="step2.html">Co-count invites</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Settings</a>
+					</li>
+			</div>
+		</nav>
+
+		<main>
+			<h1 class="mb-30">Request sent</h1>
+
+			<div class="alert alert-dismissible alert-success mb-30">
+				<button type="button" class="close" data-dismiss="alert">&times;</button>
+				<strong>Success!</strong> Your request to create a Co-count "Me and the other half" has been sent to Archie.</a>
+			</div>
+
+			<div class="card bg-light mb-3">
+				<div class="card-header">Proposed expense split</div>
+				<div class="card-body">
+					<div class="form-group split-group">
+						<label class="col-form-label" for="input1">My contribution:</label>
+						<p id="split1Value"></p>
+					</div>
+					<div class="form-group split-group">
+						<label class="col-form-label" for="input2">Archie's contribution</label>
+						<p id="split2Value"></p>
+					</div>
+				</div>
+				<canvas id="myChart" width="400" height="200"></canvas>
+			</div>
+
+			<div class="bottom-buttons">
+				<a href="dashboard.html" class="btn btn-success float-right">Finish &raquo;</a>
+			</div>
+		</main>
+
+		<!-- keep at the bottom -->
+		<script src="js/scripts.js"></script>
+
+		<script>
+			var split1Value = document.getElementById("split1Value");
+			var split2Value = document.getElementById("split2Value");
+			
+			var split1 = sessionStorage.getItem("split1");
+			var split2 = sessionStorage.getItem("split2");
+
+			split1Value.innerHTML = split1 + '%';
+			split2Value.innerHTML = split2 + '%';
+
+			var ctx = document.getElementById("myChart").getContext("2d");
+			var myChart = new Chart(ctx, {
+				type: "doughnut",
+				data: {
+					labels: ["Me", "Archie"],
+					datasets: [
+						{
+							label: "Split in %",
+							data: [split1, split2],
+							backgroundColor: ["rgba(185, 182, 67, 1)", "rgba(48, 115, 81, 1)"],
+							borderColor: ["rgba(255, 99, 132, 0)", "rgba(54, 162, 235, 0)"],
+							borderWidth: 1,
+						},
+					],
+				},
+				options: {
+					cutoutPercentage: 70,
+					legend: {
+						display: true,
+						position: "bottom",
+						labels: {
+							padding: 20,
+						},
+					},
+				},
+			});
+
+
+
+		</script>
+	</body>
+</html>

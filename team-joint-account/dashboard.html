@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>TechSprint app</title>
+		<meta name="description" content="The new joint account app" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	</head>
+
+	<body class="withStickyFooter">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+			<img src="images/cocoa_cropped.png" height="30px" alt="Cocoa"/>
+			
+			<img
+				src="images/anna.png" height="40px"
+				class="navbar-toggler no-border collapsed"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarColor01"
+				aria-controls="navbarColor01"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			/>
+			</button>
+
+			<div class="navbar-collapse collapse" id="navbarColor01">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#"
+							>My Cocoa
+							<span class="sr-only">(current)</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="step2.html">Co-count invites</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Settings</a>
+					</li>
+			</div>
+		</nav>
+
+		<main>
+			<div class="card text-white bg-light mb-40" >
+				<div class="card-header">
+					<h3><span class="material-icons md-18 expandable-btn" style="position:relative; top:3px" data-id="account1">keyboard_arrow_down</span>
+					My Cocoa Balance</div></h3>
+				<div class="card-body">
+					<h4 class="card-title">£1250.00</h4>
+				</div>
+			</div>
+
+			<h5>My Co-counts</h5>
+			<div class="card bg-light mb-3">
+				<div class="card-header">
+					<h3 class="expandable-btn" data-id="account1">
+						<span class="material-icons md-18 expandable-btn" style="position:relative; top:3px" data-id="account1">keyboard_arrow_down</span>
+						Me and the other half
+					</h3>
+				</div>
+
+				<div class="card-body expandable-content hidden" id="account1">
+					<div style="width: 100%; display: inline-block">
+						<div style="width: 68%; float: left;">
+							Upcoming payments in:
+						</div>
+						<div style="width: 32%; float: left">
+							<select class="form-control" id="timeframe">
+								<option>30 days</option>
+								<option>1 week</option>
+								<option>3 months</option>
+								<option>6 months</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="mb-20">
+						<img src="images/DashboardChart.png" alt="" style="width:100%" />
+					</div>
+
+					<table class="historyTable">
+						<tr>
+							<td width="20%">
+								<span class="small tableDate">Thur</span>
+								<span class="large tableDate">15</span>
+								<span class="small tableDate">Apr</span>
+							</td>
+							<td width="40%">Mortgage</td>
+							<td width="20%"><span class="font-bold right">£1200.00</span></td>
+						</tr>
+						<tr>
+							<td width="20%">
+								<span class="small tableDate">Mon</span>
+								<span class="large tableDate">19</span>
+								<span class="small tableDate">Apr</span>
+							</td>
+							<td width="40%">Pet Insurance</td>
+							<td width="20%"><span class="font-bold right">£12.00</span></td>
+						</tr>
+					</table>
+
+					<div style="width: 100%">
+						<button type="button" class="btn-dashboard  bg-medium">
+							<span class="material-icons">&#xe935;</span>View History
+						</button>
+
+						<button type="button" class="btn-dashboard  bg-medium">
+							<span class="material-icons">&#xe003;</span>Ping Archie
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="bottom-buttons icons">				
+				<button onclick="location.href='dashboard.html'" type="button" class="link no-border selected"><span class="material-icons" style="position:relative; top:1px;">&#xea44;</span><br />Home</button>
+				<button onclick="location.href='step2.html'" type="button" class="link no-border"><span class="material-icons" style="position:relative; top:1px;">&#xe147;</span><br />New</button>
+				<button type="button" class="link no-border"><span class="material-icons" style="position:relative; top:2px;">&#xe0c6;</span><br />Help</button>
+			</div>
+		</main>
+
+		<!-- keep at the bottom -->
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

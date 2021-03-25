@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>TechSprint app</title>
+		<meta name="description" content="The new joint account app" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+	</head>
+
+	<body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            
+			<img src="images/cocoa_cropped.png" height="30px" alt="Cocoa"/>
+			
+			<img
+				src="images/anna.png" height="40px"
+				class="navbar-toggler no-border collapsed"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarColor01"
+				aria-controls="navbarColor01"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			/>
+			</button>
+
+			<div class="navbar-collapse collapse" id="navbarColor01">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#"
+							>My Cocoa
+							<span class="sr-only">(current)</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="step2.html">Co-count invites</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Settings</a>
+					</li>
+			</div>
+		</nav>
+
+		<main>
+			<h1 class="mb-30">Your joint fund account</h1>
+			<form>
+				<fieldset>
+					<div class="form-group">
+						<label for="accountAlias">Account Alias</label>
+						<input
+							type="account"
+							class="form-control"
+							id="accountAlias"
+							aria-describedby="accountHelp"
+							placeholder="Account Alias"
+						/>
+						<small id="accountHelp" class="form-text text-muted"
+							>Choose a unique, meaningful name for all parties</small
+						>
+					</div>
+					<div class="form-group">
+						<label for="accountAlias">Expected Expense categories</label>
+						<small id="accountHelp" class="form-text text-muted"
+							>You can edit and add more later. For example: Rent payments, Utility bills,
+							Netflix</small
+						>
+						<select class="form-control" id="expenseCategory" placeholder="Expense category">
+							<option>Rent</option>
+							<option>Council Tax</option>
+							<option>TV Licence</option>
+							<option>Electricity bill</option>
+							<option>Water bill</option>
+						</select>
+						<button type="button" class="btn">Add Another</button>
+					</div>
+					<div class="bottom-buttons">
+						<button type="button" class="btn btn-danger">Cancel</button>
+						<a href="step4.html" class="btn btn-success float-right">Next: Propose Split</a>
+					</div>
+				</fieldset>
+			</form>
+		</main>
+
+		<!-- keep at the bottom -->
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
